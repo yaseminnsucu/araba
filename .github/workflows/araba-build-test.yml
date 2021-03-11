@@ -31,9 +31,9 @@ jobs:
           echo "tekerlek" >> araba.txt
           
   build2:
-  needs:build
     # The type of runner that the job will run on
     runs-on: windows-latest
+    needs: build
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
